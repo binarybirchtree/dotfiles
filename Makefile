@@ -1,7 +1,12 @@
 cwd = $(shell pwd)
 
-all: vim
+link = ln -sf --backup=t $(cwd)/$(1) $(HOME)/.$(1)
+
+all: gdb vim
+
+gdb:
+	$(call link,gdbinit)
 
 vim:
-	ln -sf --backup=t $(cwd)/vimrc $(HOME)/.vimrc
+	$(call link,vimrc)
 
