@@ -1,0 +1,12 @@
+[user]
+	email = binarybirchtree@users.noreply.github.com
+	name = Binary Birch Tree
+[alias]
+	save = !git add -A && git commit --allow-empty-message -m ''
+[merge]
+	tool = meld
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+

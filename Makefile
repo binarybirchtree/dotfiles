@@ -1,12 +1,13 @@
 cwd = $(shell pwd)
 
-link = ln -sf --backup=t $(cwd)/$(1) $(HOME)/.$(1)
+install = cp -fv --backup=t $(cwd)/$(1) $(HOME)/.$(1)
 
-all: gdb vim
+targets = gdbinit gitconfig vimrc
 
-gdb:
-	$(call link,gdbinit)
+.PHONY: all $(targets)
 
-vim:
-	$(call link,vimrc)
+all: $(targets)
+
+$(targets):
+	$(call install,$(@))
 
