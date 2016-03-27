@@ -9,4 +9,6 @@
 	tool = meld
 [difftool]
 	prompt = false
+[core]
+	pager = perl /usr/share/doc/git/contrib/diff-highlight/diff-highlight | less
 
