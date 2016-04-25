@@ -1,13 +1,16 @@
+execute pathogen#infect()
+filetype plugin indent on
 syntax on
+set background=dark
+set expandtab
+set ignorecase
+set mouse=a
+set noswapfile
 set number
 set ruler
-set noswapfile
-set smartcase
-set ignorecase
-set expandtab
-set tabstop=2
-set softtabstop=2
 set shiftwidth=2
+set smartcase
+set softtabstop=2
 set tabpagemax=20
-set background=dark
+set tabstop=2
 
